@@ -10,12 +10,18 @@ class Book(models.Model):
     beti=models.IntegerField()
     holat=models.BooleanField()
     udk=models.IntegerField()
+
     def __str__(self) -> str:
         return self.nomi
 
 
 class Autor(models.Model):
     nomi=models.CharField(max_length=200)
+    facebook = models.CharField(max_length=200)
+    instagram = models.CharField(max_length=200)
+    telegram = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='autor/')
+    
     def __str__(self) -> str:
         return self.nomi
     
