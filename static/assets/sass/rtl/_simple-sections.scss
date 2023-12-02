@@ -1,0 +1,21 @@
+.about-content {
+    padding-left: 0;
+    padding-right: 56px;
+    @include xl {
+        padding-right: 0;
+    }
+}
+
+.img-box4 {
+    padding-left: 0;
+    padding-right: 56px;
+    @include xl {
+        padding-right: 0;
+    }
+}
+
+.img-left {
+    left: unset;
+    right: 0;
+    transform: rotateY(180deg);
+}

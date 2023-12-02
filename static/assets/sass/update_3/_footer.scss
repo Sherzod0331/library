@@ -1,0 +1,36 @@
+.footer-layout7 {
+    --body-color: #fff;
+    background-color: $title-color;
+    background-size: 100% 100%;
+    background-position: top center;
+    margin-top: -80px;
+    padding-top: 80px;
+    .footer-widget.style2 {
+        .widget_title {
+            font-size: 24px;
+            text-transform: capitalize;
+            padding: 0 0 15px 0;
+            font-weight: 600;
+            &:before {
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+@include lg {
+    .footer-layout7 {
+        padding-top: 20px;
+        .copyright-wrap {
+            padding: 25px 0;
+        }
+    }
+}
+
+@include sm {
+    .footer-layout7 {
+        .widget-area {
+            padding-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.footer-widget {
+    .widget_title{
+        &:before, 
+        &:after {
+            left: unset;
+            right: 0;
+        }
+    }
+    &.widget_meta, 
+    &.widget_pages, 
+    &.widget_archive, 
+    &.widget_categories, 
+    &.widget_nav_menu {
+        a {
+            padding: 0 25px 0 0;
+            &:before {
+                left: unset;
+                right: 0;
+                transform: translateY(-50%) rotateY(180deg);
+            }
+        }
+    }
+    input, select {
+        text-align: right;
+    }
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
